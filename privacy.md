@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Effective date:** June 5, 2026
-**Last updated:** June 5, 2026
+**Last updated:** September 16, 2026
 
 This Privacy Policy explains how Yannick Ormen ("we," "us," or "CoupleGoals") collects, uses, and protects information when you use the CoupleGoals mobile application (the "App").
 
@@ -41,6 +41,7 @@ We collect only the information necessary to operate the App. Specifically:
 - **Couple data:** when you pair with a partner, we store the link between your account and theirs.
 - **Content you create:** the challenges, to-dos, events, reactions ("Sparks"), and notes you create within the App. This content is shared between you and your paired partner.
 - **Optional inputs:** event titles, dates, optional notes, optional person names (e.g. whose birthday).
+- **Profile photo (optional):** if you add a profile photo, it is stored in Firebase Storage, downscaled to a maximum of 512 pixels, visible only to you and your paired partner, and deleted when you delete your account.
 
 ### 3.2 Information collected automatically
 
@@ -50,7 +51,7 @@ We collect only the information necessary to operate the App. Specifically:
 
 ### 3.3 Information we do not collect
 
-We do not collect: your contacts, location, photos, microphone, camera, biometric data, health data, financial information, or browsing history outside the App.
+We do not collect: your contacts, location, microphone, camera, biometric data, health data, financial information, or browsing history outside the App. (The only image we store is an optional profile photo you choose to add — see Section 3.1.)
 
 ---
 
@@ -93,6 +94,9 @@ We use PostHog Cloud (EU instance) for product analytics. Analytics data is stor
 ### 6.3 Apple Push Notification service (Apple Inc.)
 Used to deliver push notifications to your device. Apple's privacy policy: https://www.apple.com/legal/privacy/
 
+### 6.4 Anthropic (Anthropic PBC)
+When you create a habit challenge with a custom title, that title — and only that title — is sent to Anthropic's Claude API to classify its time of day and effort level, so the app can schedule it sensibly. No names, identifiers, or other content are included, and challenges you choose from the built-in catalog are not sent. Anthropic's privacy policy: https://www.anthropic.com/legal/privacy
+
 We do not share your personal data with any other third parties. We do not share data for advertising purposes.
 
 ---
@@ -100,6 +104,8 @@ We do not share your personal data with any other third parties. We do not share
 ## 7. Where is your data stored?
 
 Your data is stored primarily within the European Union (Belgium, the Netherlands, and Germany), via the providers listed in Section 6. Some metadata may transit through other regions for technical reasons (e.g. Apple Push Notification routing). Our providers have certified safeguards for any such transfers (Standard Contractual Clauses, adequacy decisions where applicable).
+
+One feature is an exception to this EU-first storage. When you create a habit challenge with a custom title, that title is sent to Anthropic's Claude API (see Section 6.4) and processed on Anthropic's infrastructure in the United States. This transfer is limited to the challenge title alone — no name, account identifier, or other content is attached. Our use of the Claude API is governed by Anthropic's Commercial Terms of Service, which incorporate Anthropic's Data Processing Addendum by reference; that Addendum incorporates the European Commission's Standard Contractual Clauses (with the UK and Swiss equivalents) to the extent required by applicable data protection law, as the safeguard for this transfer. Challenges you choose from the built-in catalog are not sent.
 
 ---
 
@@ -174,4 +180,4 @@ We aim to respond within 30 days.
 
 ---
 
-*This Privacy Policy was last updated on June 5, 2026. A version-controlled history is available at https://github.com/menor22/CoupleGoals.*
+*This Privacy Policy was last updated on September 16, 2026. A version-controlled history is available at https://github.com/menor22/couplegoals-legal.*
