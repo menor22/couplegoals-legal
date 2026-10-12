@@ -135,9 +135,13 @@ To exercise any of these rights, contact us at **contact@couplegoals.ch**. We wi
 
 ## 10. Account deletion
 
-You can delete your CoupleGoals account at any time from within the App (Settings → Delete Account).
+You can delete your CoupleGoals account at any time from within the App (Settings → Delete Account). We display a clear confirmation before deletion. **This action cannot be undone.**
 
-**Important: CoupleGoals is a paired application.** Deleting your account also deletes the shared couple data — all challenges, events, to-dos, and reactions you and your partner created together. Your partner will lose access to this shared history. We will display a clear confirmation before deletion. **This action cannot be undone.**
+**What is deleted.** Your profile and profile photo, your check-ins, the challenges you created on your own, and the to-dos, lists and events you added. A list you created is kept only if your partner added items to it: it is then transferred to your partner, and the items you added are deleted. Your analytics profile is deleted too; usage events already recorded are kept, but are no longer associated with any profile.
+
+**What your partner keeps.** CoupleGoals is a paired application, so some data is shared. Deleting your account does not delete your partner's own data: their check-ins, their own challenges, and the to-dos, lists and events they added stay with them. Challenges you were doing together continue as theirs. Past challenges stay in their history, where you appear only as "Deleted account", without your name or photo. Bets between you end without a result: no one wins or loses, and no reward or forfeit applies.
+
+**Notice to your partner.** Your partner is told once, in the App, that your account was deleted, using your display name. The name is removed as soon as they have seen the notice, and at the latest after 30 days.
 
 After deletion, your personal data is removed from our active databases within 30 days. See Section 8 for details on backup retention.
 
