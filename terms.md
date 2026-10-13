@@ -1,7 +1,7 @@
 # Terms of Service
 
 **Effective date:** June 5, 2026
-**Last updated:** June 5, 2026
+**Last updated:** October 13, 2026
 
 Welcome to CoupleGoals. These Terms of Service ("Terms") govern your use of the CoupleGoals mobile application (the "App") provided by Yannick Ormen ("we," "us," or "CoupleGoals"). By using the App, you agree to these Terms. If you do not agree, please do not use the App.
 
@@ -73,7 +73,7 @@ CoupleGoals is built around the relationship between two people. By using the Ap
 
 - You will treat your partner with respect within the App.
 - Certain data you create may be visible to your partner (as described in the App's UI and in our Privacy Policy).
-- If your relationship ends, either partner can leave the couple by deleting their account, which will also delete shared couple data (see Section 8 and our Privacy Policy).
+- If your relationship ends, either partner can leave the couple by deleting their account. The other partner keeps their own data (see Section 8 and our Privacy Policy).
 - We are not responsible for relationship conflicts, disagreements, or harms that arise between paired partners. CoupleGoals is a tool, not a counselor.
 
 If you experience abuse, threats, or harm from your paired partner through the App, you can immediately delete your account from within the App. If you are in danger, please contact local emergency services.
@@ -88,11 +88,17 @@ CoupleGoals sends push notifications to keep you informed of your partner's acti
 
 ## 8. Account deletion
 
-You can delete your account at any time from within the App (Settings → Delete Account).
+You can delete your account at any time from within the App (Settings → Delete Account). We display a clear confirmation before deletion. **This action cannot be undone.**
 
-**Important: CoupleGoals is a paired application.** Deleting your account also deletes all shared couple data — challenges, events, to-dos, reactions, and history that you and your partner created together. Your partner will lose access to this shared history. This action cannot be undone.
+**What is deleted.** Your profile and profile photo, your check-ins, the challenges you created on your own, and the to-dos, lists and events you added. Bets between you and your partner end without a result: no one wins or loses, and no reward or forfeit applies.
 
-We will display a clear confirmation before deletion.
+**What your partner keeps.** CoupleGoals is a paired application, but deleting your account does not delete your partner's own data. Their check-ins, their own challenges, and the to-dos, lists and events they added stay with them. Challenges you were doing together continue as their own solo challenges, with the progress they had. Your partner can keep using the App on their own. In their history you appear only as "Deleted account" (« Compte supprimé » in French), without your name or photo.
+
+**If your former partner pairs again.** When they pair with someone new, a new couple is created. The couple you shared becomes read-only history for them, and their running challenges and open to-dos move to the new couple.
+
+**Notice to your partner.** Your partner is told once, in the App, that your account was deleted, using your display name.
+
+How your personal data is handled after deletion is described in our Privacy Policy (Section 10).
 
 ---
 
@@ -188,4 +194,4 @@ Postal: 20E route de Vandoeuvres, 1223 Cologny, Switzerland
 
 *Privacy Policy: see https://couplegoals.ch/privacy (or the linked URL in the App).*
 
-*These Terms of Service were last updated on June 5, 2026.*
+*These Terms of Service were last updated on October 13, 2026.*
