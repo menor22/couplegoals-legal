@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Effective date:** June 5, 2026
-**Last updated:** September 16, 2026
+**Last updated:** October 15, 2026
 
 This Privacy Policy explains how Yannick Ormen ("we," "us," or "CoupleGoals") collects, uses, and protects information when you use the CoupleGoals mobile application (the "App").
 
@@ -184,4 +184,4 @@ We aim to respond within 30 days.
 
 ---
 
-*This Privacy Policy was last updated on September 16, 2026. A version-controlled history is available at https://github.com/menor22/couplegoals-legal.*
+*This Privacy Policy was last updated on October 15, 2026. A version-controlled history is available at https://github.com/menor22/couplegoals-legal.*
