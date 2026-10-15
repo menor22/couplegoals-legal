@@ -41,6 +41,7 @@ We collect only the information necessary to operate the App. Specifically:
 - **Couple data:** when you pair with a partner, we store the link between your account and theirs.
 - **Content you create:** the challenges, to-dos, events, reactions ("Sparks"), and notes you create within the App. This content is shared between you and your paired partner.
 - **Optional inputs:** event titles, dates, optional notes, optional person names (e.g. whose birthday).
+- **Purchase information (if you subscribe):** payment is handled entirely by Apple; we never receive your card or bank details, your Apple ID, or your billing address. Through RevenueCat (see Section 6.5) we receive the state of your subscription: which plan you bought, purchase, renewal and expiry dates, whether it will renew, whether a payment problem or a refund occurred, the store, and Apple's transaction identifiers. It is linked to your account identifier, not to your name or email. Your partner sees that your couple is unlocked, and by whom, but never any payment details.
 - **Profile photo (optional):** if you add a profile photo, it is stored in Firebase Storage, downscaled to a maximum of 512 pixels, visible only to you and your paired partner, and deleted when you delete your account.
 
 ### 3.2 Information collected automatically
@@ -51,7 +52,7 @@ We collect only the information necessary to operate the App. Specifically:
 
 ### 3.3 Information we do not collect
 
-We do not collect: your contacts, location, microphone, camera, biometric data, health data, financial information, or browsing history outside the App. (The only image we store is an optional profile photo you choose to add — see Section 3.1.)
+We do not collect: your contacts, location, microphone, camera, biometric data, health data, payment card or bank details, or browsing history outside the App. (The only image we store is an optional profile photo you choose to add — see Section 3.1.)
 
 ---
 
@@ -60,6 +61,7 @@ We do not collect: your contacts, location, microphone, camera, biometric data, 
 We use your information to:
 
 - Provide the core functionality of the App (create accounts, pair partners, store and sync your shared content, deliver notifications).
+- Give you and your partner access to the paid features you subscribed to, keep that access in sync when you change partners or restore a purchase on another device, and detect when both of you pay for the same couple so we can tell you.
 - Send notifications about your partner's activity (with your consent — managed in your device's notification settings).
 - Maintain security, prevent fraud, and resolve technical issues.
 - Understand how the App is used in aggregate, so we can improve it.
@@ -73,7 +75,7 @@ We do not use your data for advertising. We do not sell or rent your personal da
 
 If you are in the European Union, the United Kingdom, or another jurisdiction governed by GDPR-equivalent law, our legal bases for processing your data are:
 
-- **Contract performance (Art. 6(1)(b) GDPR):** to provide the App's services to you.
+- **Contract performance (Art. 6(1)(b) GDPR):** to provide the App's services to you, including the subscription you purchased.
 - **Legitimate interests (Art. 6(1)(f) GDPR):** to maintain security, prevent fraud, and improve the App in ways that do not override your privacy interests.
 - **Consent (Art. 6(1)(a) GDPR):** for push notifications and any optional features you explicitly enable.
 
@@ -97,6 +99,11 @@ Used to deliver push notifications to your device. Apple's privacy policy: https
 ### 6.4 Anthropic (Anthropic PBC)
 When you create a habit challenge with a custom title, that title — and only that title — is sent to Anthropic's Claude API to classify its time of day and effort level, so the app can schedule it sensibly. No names, identifiers, or other content are included, and challenges you choose from the built-in catalog are not sent. Anthropic's privacy policy: https://www.anthropic.com/legal/privacy
 
+### 6.5 RevenueCat (subscriptions)
+We use RevenueCat, Inc. (USA) to manage subscriptions bought through the App Store. RevenueCat receives your account's technical identifier (not your name or email), your purchase and subscription information from Apple, and technical data (device model, app version, operating system, country, IP address). This data is hosted in the United States. The transfer is governed by RevenueCat's data processing agreement, which includes the European Commission's standard contractual clauses, adapted for Swiss law (FADP). Subscription events (for example "subscription started" or "renewed", without prices or payment details) are also recorded in our analytics (Section 6.2) under the same account identifier. RevenueCat's privacy policy: https://www.revenuecat.com/privacy
+
+Apple processes your payment as an independent controller, under its own privacy policy: https://www.apple.com/legal/privacy/
+
 We do not share your personal data with any other third parties. We do not share data for advertising purposes.
 
 ---
@@ -107,12 +114,15 @@ Your data is stored primarily within the European Union (Belgium, the Netherland
 
 One feature is an exception to this EU-first storage. When you create a habit challenge with a custom title, that title is sent to Anthropic's Claude API (see Section 6.4) and processed on Anthropic's infrastructure in the United States. This transfer is limited to the challenge title alone — no name, account identifier, or other content is attached. Our use of the Claude API is governed by Anthropic's Commercial Terms of Service, which incorporate Anthropic's Data Processing Addendum by reference; that Addendum incorporates the European Commission's Standard Contractual Clauses (with the UK and Swiss equivalents) to the extent required by applicable data protection law, as the safeguard for this transfer. Challenges you choose from the built-in catalog are not sent.
 
+Subscriptions are a second exception. RevenueCat receives the data described in Section 6.5 in the United States; the App connects to RevenueCat when it starts, even if you never subscribe. No content you create in the App (challenges, to-dos, events, notes, photos) is sent. The transfer is governed by RevenueCat's data processing agreement, which includes the European Commission's standard contractual clauses, adapted for Swiss law (FADP).
+
 ---
 
 ## 8. How long do we keep your data?
 
 - **Active accounts:** for as long as your account exists.
 - **Deleted accounts:** when you delete your account in the App, your personal data is removed from our active databases within 30 days. Some data may persist briefly in encrypted backups (up to 90 days) before being permanently overwritten.
+- **Purchase information:** for as long as your account exists. When you delete your account, our copy is deleted and we ask RevenueCat to delete your customer record. Apple keeps its own records of your purchases under its privacy policy, and we may keep financial reports from Apple that do not identify you, as accounting law requires.
 - **Analytics data:** aggregated and anonymized usage data may be retained indefinitely, as it does not identify you personally.
 
 ---
@@ -143,6 +153,8 @@ You can delete your CoupleGoals account at any time from within the App (Setting
 
 **Notice to your partner.** Your partner is told once, in the App, that your account was deleted, using your display name. The name is removed as soon as they have seen the notice, and at the latest after 30 days.
 
+**Subscriptions.** Deleting your account does not cancel an App Store subscription: Apple keeps billing until you cancel it in your Apple ID settings (Settings → your name → Subscriptions). The App reminds you of this before you delete your account, with a link to those settings. Your purchase information is deleted with your account (Section 8).
+
 After deletion, your personal data is removed from our active databases within 30 days. See Section 8 for details on backup retention.
 
 ---
@@ -152,7 +164,7 @@ After deletion, your personal data is removed from our active databases within 3
 We take reasonable technical and organizational measures to protect your data, including:
 
 - Encryption in transit (HTTPS / TLS for all network requests).
-- Encryption at rest (provided by Firebase and PostHog infrastructure).
+- Encryption at rest (provided by Firebase, PostHog and RevenueCat infrastructure).
 - Access controls limiting who can read your data (only you and your paired partner can see your shared content; only authorized administrators can access infrastructure).
 - Regular security reviews and updates.
 
