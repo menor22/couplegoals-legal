@@ -9,4 +9,4 @@ defaults:
     values:
       layout: default
 
-include: [privacy.md, terms.md, terms-fr.md]
+include: [privacy.md, terms.md, terms-fr.md, privacy-fr.md]
