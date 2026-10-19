@@ -128,13 +128,41 @@ If you are using CoupleGoals through Apple's TestFlight program, you understand 
 
 ---
 
-## 12. Intellectual property
+## 12. Subscriptions
+
+**One subscription per couple.** Once your free trial ends, CoupleGoals requires a subscription for couples. One subscription, bought by either partner, covers both partners while you are paired and the subscription is active. If two subscriptions are bought for the same couple by mistake, you can cancel one in your Apple ID settings and ask Apple for a refund.
+
+**Free trial.** When you pair with a partner, your couple gets a 7-day free trial of every feature. No payment details are asked for. Each person can start a free trial only once: a new couple gets one only if at least one partner has never had one.
+
+**Founding couples.** Couples paired before subscriptions were introduced keep free access for as long as that couple stays together in the App. This belongs to that couple; a couple formed later follows these Terms like any other.
+
+**Prices.** Prices are shown in the App before you buy, in your local currency, including any applicable taxes, as set by Apple.
+
+**Auto-renewal.** A subscription renews automatically at the end of each period (monthly or yearly) unless it is cancelled at least 24 hours before the end of the current period. Payment is charged to your Apple ID account.
+
+**Cancellation.** You can cancel at any time in your Apple ID settings (Settings → your name → Subscriptions). Cancellation takes effect at the end of the current period, and you keep access until then.
+
+**Billing and refunds.** Purchases are processed by Apple. Billing, payment problems and refunds are handled by Apple under its terms; we cannot issue refunds ourselves. You can request a refund at https://reportaproblem.apple.com.
+
+**When a subscription ends.** If a subscription lapses or is refunded and no other subscription covers your couple, the App is locked for both partners until one of you subscribes. Nothing is deleted: your challenges, history, to-dos, events and lists are kept, and are available again as soon as access returns. Deleting your account does not cancel your subscription. Cancel it in your Apple ID settings first.
+
+**When a couple ends.** A subscription stays with the partner who bought it: if the other partner deletes their account, it covers the payer's next couple from the day they pair; if the payer deletes their account, it no longer covers their former partner, who can keep using the App on their own, for free.
+
+**Using the App without a partner.** Using the App on your own stays free: your own challenges, to-dos, lists and agenda work without a subscription; couple challenges and bets need a paired partner.
+
+**Price changes.** We may change subscription prices. Apple notifies you in advance as its rules require, and where Apple requires your consent to a price increase, the subscription does not renew at the new price without it.
+
+**Apple's licence agreement.** Apple's Licensed Application End User License Agreement (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) also applies to your use of the App.
+
+---
+
+## 13. Intellectual property
 
 CoupleGoals and its design, branding, code, and content (excluding your user-generated content) are owned by Yannick Ormen and protected by intellectual property laws. You may not copy, modify, or redistribute any part of the App without our written permission.
 
 ---
 
-## 13. Disclaimer of warranties
+## 14. Disclaimer of warranties
 
 THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS.
 
@@ -142,7 +170,7 @@ Nothing in this Section limits any rights you have under mandatory consumer prot
 
 ---
 
-## 14. Limitation of liability
+## 15. Limitation of liability
 
 TO THE FULLEST EXTENT PERMITTED BY LAW, YANNICK ORMEN SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF, OR INABILITY TO USE, THE APP. OUR TOTAL LIABILITY TO YOU FOR ANY CLAIM SHALL NOT EXCEED CHF 100 OR THE EQUIVALENT IN YOUR LOCAL CURRENCY.
 
@@ -150,7 +178,7 @@ This Section does not exclude liability for gross negligence, willful misconduct
 
 ---
 
-## 15. Indemnification
+## 16. Indemnification
 
 You agree to indemnify and hold harmless Yannick Ormen from any claims, damages, or expenses arising from:
 
@@ -160,7 +188,7 @@ You agree to indemnify and hold harmless Yannick Ormen from any claims, damages,
 
 ---
 
-## 16. Termination
+## 17. Termination
 
 You may stop using CoupleGoals at any time by deleting the App from your device or deleting your account.
 
@@ -168,7 +196,7 @@ We may suspend or terminate your access to the App if you violate these Terms, i
 
 ---
 
-## 17. Governing law and jurisdiction
+## 18. Governing law and jurisdiction
 
 These Terms are governed by Swiss law. Any disputes arising from these Terms or your use of the App shall be subject to the exclusive jurisdiction of the courts of Geneva, Switzerland, unless mandatory consumer protection law in your country of residence requires otherwise.
 
@@ -176,13 +204,13 @@ If you are a consumer based in the EU or UK, you retain all mandatory protection
 
 ---
 
-## 18. Changes to these Terms
+## 19. Changes to these Terms
 
 We may update these Terms occasionally. When we do, we will update the "Last updated" date above and, for material changes, notify you within the App or by email. Continued use of the App after a change indicates your acceptance of the updated Terms. If you do not agree to a change, you may delete your account.
 
 ---
 
-## 19. Contact
+## 20. Contact
 
 For questions about these Terms:
 
@@ -192,6 +220,6 @@ Postal: 20E route de Vandoeuvres, 1223 Cologny, Switzerland
 
 ---
 
-*Privacy Policy: see https://couplegoals.ch/privacy (or the linked URL in the App).*
+*Privacy Policy: see https://couplegoals.ch/privacy (or the linked URL in the App). French version of these Terms: https://couplegoals.ch/fr/terms*
 
 *These Terms of Service were last updated on October 15, 2026.*
