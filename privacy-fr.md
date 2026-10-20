@@ -6,7 +6,7 @@ lang: fr
 # Politique de confidentialité
 
 **Date d’entrée en vigueur :** 5 juin 2026
-**Dernière mise à jour :** 15 octobre 2026
+**Dernière mise à jour :** 20 octobre 2026
 
 La présente politique de confidentialité explique comment Yannick Ormen (« nous » ou « CoupleGoals ») collecte, utilise et protège les informations lorsque vous utilisez l’application mobile CoupleGoals (l’« App »).
 
@@ -203,4 +203,4 @@ Nous nous efforçons de répondre dans un délai de 30 jours.
 
 ---
 
-*La présente politique de confidentialité a été mise à jour pour la dernière fois le 15 octobre 2026. Un historique versionné est disponible sur https://github.com/menor22/couplegoals-legal.*
+*La présente politique de confidentialité a été mise à jour pour la dernière fois le 20 octobre 2026. Un historique versionné est disponible sur https://github.com/menor22/couplegoals-legal.*

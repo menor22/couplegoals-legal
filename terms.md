@@ -1,7 +1,7 @@
 # Terms of Service
 
 **Effective date:** June 5, 2026
-**Last updated:** October 15, 2026
+**Last updated:** October 20, 2026
 
 Welcome to CoupleGoals. These Terms of Service ("Terms") govern your use of the CoupleGoals mobile application (the "App") provided by Yannick Ormen ("we," "us," or "CoupleGoals"). By using the App, you agree to these Terms. If you do not agree, please do not use the App.
 
@@ -222,4 +222,4 @@ Postal: 20E route de Vandoeuvres, 1223 Cologny, Switzerland
 
 *Privacy Policy: see https://couplegoals.ch/privacy (or the linked URL in the App). French version of these Terms: https://couplegoals.ch/fr/terms*
 
-*These Terms of Service were last updated on October 15, 2026.*
+*These Terms of Service were last updated on October 20, 2026.*
