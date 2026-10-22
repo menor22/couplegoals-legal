@@ -34,12 +34,9 @@ permalink: /invite/
   h1 { font-size: 26px; line-height: 1.25; margin: 0 0 24px; text-align: center; font-weight: 700; letter-spacing: -0.01em; }
   .card { background: var(--card); border-radius: 20px; padding: 20px; box-shadow: 0 1px 2px rgba(28,28,41,.06); }
   .step { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 10px; }
-  .button {
-    display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 52px;
-    border: 0; border-radius: 14px; background: var(--accent); color: #fff; font: inherit; font-weight: 600;
-    text-decoration: none; cursor: pointer;
-  }
-  .button:focus-visible, .copy:focus-visible, footer a:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
+  /* Apple's badge, unmodified (Apple marketing guidelines: ≥ 40 px tall, clear space ¼ of its height). */
+  .badge { display: block; width: fit-content; margin: 0 auto; padding: 4px; border-radius: 12px; }
+  .store-badge { display: block; height: 54px; width: auto; }
   .divider { height: 1px; background: var(--line); margin: 20px 0; border: 0; }
   .code-row { display: flex; flex-direction: column; gap: 10px; }
   .code {
@@ -52,7 +49,7 @@ permalink: /invite/
     background: transparent; color: var(--accent); font: inherit; font-weight: 600; cursor: pointer;
   }
   .note { color: var(--muted); text-align: center; margin: 0; }
-  .note + .button, .desktop .button { margin-top: 16px; }
+  .desktop .badge { margin-top: 16px; }
   [hidden] { display: none !important; }
   footer { margin-top: 28px; font-size: 14px; color: var(--muted); text-align: center; }
   footer a { color: var(--muted); }
@@ -61,22 +58,23 @@ permalink: /invite/
 </head>
 <body>
 <main>
-  <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
-    <path fill="#FF6178" opacity=".45" d="M24 48C24 48 6 37 6 24.5 6 18.7 10.4 14 16 14c3.4 0 6.3 1.8 8 4.6 1.7-2.8 4.6-4.6 8-4.6 5.6 0 10 4.7 10 10.5C42 37 24 48 24 48z"/>
-    <path fill="#FF6178" d="M40 54C40 54 22 43 22 30.5 22 24.7 26.4 20 32 20c3.4 0 6.3 1.8 8 4.6 1.7-2.8 4.6-4.6 8-4.6 5.6 0 10 4.7 10 10.5C58 43 40 54 40 54z"/>
+  <!-- The app's two-hearts mark (TwoHeartsMark.imageset): coral and sage, unchanged. -->
+  <svg class="mark" viewBox="171 189 695 695" aria-hidden="true">
+    <path fill="#E27D5F" d="M422 358C339 275 201 330 201 468C201 578 422 743 422 743C422 743 643 578 643 468C643 330 505 275 422 358Z"/>
+    <path fill="#7FA582" d="M615 413C532 330 394 386 394 524C394 634 615 798 615 798C615 798 836 634 836 524C836 386 698 330 615 413Z"/>
   </svg>
-  <h1 data-t="title">You’ve got an invite on Couple Goals 💛</h1>
+  <h1 data-t="title">You’ve got an invite on Couple&nbsp;Goals 💛</h1>
 
   <section class="card">
     <!-- Phone (iOS and Android alike): get the app, then the code. -->
     <div id="phone">
       <p class="step" data-t="step1">Get the app</p>
-      <a class="button" id="store" href="https://apps.apple.com/app/couple-goals-together/id6777144881" data-t="store">Download on the App Store</a>
+      <a class="badge" href="https://apps.apple.com/app/couple-goals-together/id6777144881"><img class="store-badge" src="/assets/app-store-badge-en.svg" alt="Download on the App Store" width="162" height="54"></a>
     </div>
     <!-- Desktop / other: open the link on the iPhone. -->
     <div id="desktop" class="desktop" hidden>
       <p class="note" data-t="desktop">Open this link on your iPhone to join.</p>
-      <a class="button" href="https://apps.apple.com/app/couple-goals-together/id6777144881" data-t="store">Download on the App Store</a>
+      <a class="badge" href="https://apps.apple.com/app/couple-goals-together/id6777144881"><img class="store-badge" src="/assets/app-store-badge-en.svg" alt="Download on the App Store" width="162" height="54"></a>
     </div>
 
     <hr class="divider">
@@ -102,16 +100,16 @@ permalink: /invite/
   var ENDPOINT = {{ site.invite_endpoint | jsonify }};
   var T = {
     en: {
-      title: "You’ve got an invite on Couple Goals 💛", step1: "Get the app", store: "Download on the App Store",
+      title: "You’ve got an invite on Couple\u00a0Goals 💛", step1: "Get the app", store: "Download on the App Store", badge: "/assets/app-store-badge-en.svg",
       step2: "Then enter this code", copy: "Copy code", copied: "Copied",
       nocode: "Ask your partner for their invite code.", desktop: "Open this link on your iPhone to join.",
-      privacy: "Privacy", privacyHref: "/privacy/", doc: "Couple Goals invite"
+      privacy: "Privacy", privacyHref: "/privacy/", doc: "Couple\u00a0Goals invite"
     },
     fr: {
-      title: "Une invitation t’attend sur Couple Goals 💛", step1: "Télécharge l’app", store: "Télécharger dans l’App Store",
+      title: "Une invitation t’attend sur Couple\u00a0Goals 💛", step1: "Télécharge l’app", store: "Télécharger dans l’App Store", badge: "/assets/app-store-badge-fr.svg",
       step2: "Puis entre ce code", copy: "Copier le code", copied: "Copié",
       nocode: "Demande le code d’invitation à ta moitié.", desktop: "Ouvre ce lien sur ton iPhone pour rejoindre.",
-      privacy: "Confidentialité", privacyHref: "/fr/privacy/", doc: "Invitation Couple Goals"
+      privacy: "Confidentialité", privacyHref: "/fr/privacy/", doc: "Invitation Couple\u00a0Goals"
     }
   };
 
@@ -124,6 +122,9 @@ permalink: /invite/
     if (t[key]) el.textContent = t[key];
   });
   document.getElementById("privacy").href = t.privacyHref;
+  Array.prototype.forEach.call(document.querySelectorAll(".store-badge"), function (img) {
+    img.src = t.badge; img.alt = t.store;
+  });
 
   var ua = navigator.userAgent || "";
   var platform = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
