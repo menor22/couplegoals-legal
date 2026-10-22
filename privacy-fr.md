@@ -6,9 +6,9 @@ lang: fr
 # Politique de confidentialité
 
 **Date d’entrée en vigueur :** 5 juin 2026
-**Dernière mise à jour :** 20 octobre 2026
+**Dernière mise à jour :** 22 octobre 2026
 
-La présente politique de confidentialité explique comment Yannick Ormen (« nous » ou « CoupleGoals ») collecte, utilise et protège les informations lorsque vous utilisez l’application mobile CoupleGoals (l’« App »).
+La présente politique de confidentialité explique comment Yannick Ormen (« nous » ou « CoupleGoals ») collecte, utilise et protège les informations lorsque vous utilisez l’application mobile CoupleGoals (l’« App ») ou ouvrez un lien d’invitation sur couplegoals.ch.
 
 Nous respectons votre vie privée et tenons à être transparents sur les données que nous traitons. Pour toute question, écrivez-nous à **contact@couplegoals.ch**.
 
@@ -56,6 +56,7 @@ Nous ne collectons que les informations nécessaires au fonctionnement de l’Ap
 - **Informations sur l’appareil :** type d’appareil, version du système d’exploitation, version de l’App et langue de l’appareil. Elles servent à assurer le bon fonctionnement de l’App sur votre appareil.
 - **Jetons de notification push :** un jeton unique généré par le service de notifications push d’Apple (via Firebase Cloud Messaging), qui nous permet d’envoyer des notifications sur votre appareil. Vous pouvez désactiver les notifications à tout moment dans les réglages de votre appareil.
 - **Statistiques d’utilisation (pseudonymisées) :** avec PostHog (voir la section 6.2), nous enregistrons la manière dont l’App est utilisée : des actions comme « a validé un défi », « a ouvert les Réglages », « a ouvert une notification » ou « a vu l’écran d’abonnement », les écrans que vous consultez, les événements liés à l’abonnement et à l’essai (début, renouvellement, résiliation, expiration, remboursement, problème de paiement ; début et fin de l’essai), ainsi que des rapports d’erreur techniques lorsqu’un problème survient dans l’App. Chaque événement est lié à un identifiant de compte aléatoire et, une fois en couple, à un identifiant de couple aléatoire — jamais à votre nom, à votre e-mail ou à votre photo, ni à ce que vous écrivez (titres de défis, notes, messages). Les événements comportent aussi un contexte technique : modèle d’appareil, versions du système d’exploitation et de l’App, langue, fuseau horaire, type de réseau (Wi-Fi ou mobile) et le fait qu’il s’agisse ou non d’une version de test de l’App. Les prix ne sont jamais enregistrés. PostHog est configuré pour ne pas conserver votre adresse IP, et nous ne l’utilisons pas pour vous localiser. Vous pouvez désactiver ces statistiques à tout moment dans l’App (Réglages → Confidentialité → Partager les statistiques d’utilisation) : dès lors, plus aucun événement d’utilisation n’est enregistré à votre sujet, ni depuis l’App ni depuis nos serveurs.
+- **Liens et codes d’invitation :** lorsque vous ouvrez un lien d’invitation (couplegoals.ch/invite/), la page compte une visite : le type d’appareil (iPhone, Android ou autre), la langue de la page et si le lien contenait un code. Le code lui-même ne quitte jamais votre navigateur. Ce comptage est transmis à PostHog sans identifiant permettant de le relier à vous ou à d’autres visites, et sans votre adresse IP. Pour limiter les abus, notre serveur compte les tentatives : les visites de la page d’invitation par adresse IP et, lorsque vous saisissez le code de votre partenaire dans l’App, les tentatives par compte, par adresse IP et par code saisi. Les adresses IP et les codes ne sont conservés que sous une forme hachée avec une clé secrète (une transformation à sens unique), jamais en clair, avec l’heure des tentatives. Ces données sont supprimées automatiquement, normalement dans les deux jours suivant la dernière tentative. La page d’invitation ne dépose aucun cookie et ne charge rien depuis d’autres sites.
 
 ### 3.3 Informations que nous ne collectons pas
 
@@ -131,6 +132,7 @@ Les abonnements constituent une seconde exception. RevenueCat reçoit aux États
 - **Comptes supprimés :** lorsque vous supprimez votre compte dans l’App, vos données personnelles sont effacées de nos bases de données actives dans un délai de 30 jours. Certaines données peuvent subsister brièvement dans des sauvegardes chiffrées (jusqu’à 90 jours) avant d’être définitivement écrasées.
 - **Informations d’achat :** aussi longtemps que votre compte existe. Lorsque vous supprimez votre compte, notre copie est supprimée et nous demandons à RevenueCat de supprimer votre fiche client. Apple conserve ses propres données sur vos achats selon sa politique de confidentialité, et nous pouvons conserver des rapports financiers d’Apple qui ne vous identifient pas, comme l’exige le droit comptable.
 - **Statistiques d’utilisation :** les événements d’utilisation sont conservés 12 mois, puis supprimés. Lorsque vous supprimez votre compte, votre profil statistique est supprimé ; les événements déjà enregistrés sont conservés jusqu’à la fin de cette période, liés uniquement à l’identifiant de compte aléatoire, et plus aucun nouvel événement n’est enregistré.
+- **Comptages anti-abus :** les comptages de tentatives décrits à la section 3.2 (liens et codes d’invitation) sont supprimés automatiquement, normalement dans les deux jours suivant la dernière tentative.
 
 ---
 
