@@ -1,0 +1,172 @@
+---
+# Invite landing page (CoupleGoals docs/PAIRING-1.5.md, item 4). Its own page, not the theme:
+# one inline style block, one inline script, nothing loaded from another domain, no cookies.
+# The code travels in the URL fragment (#CG-ABC123), which never reaches a server.
+layout: null
+permalink: /invite/
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta name="apple-itunes-app" content="app-id=6777144881">
+<meta name="theme-color" content="#F9EDE5">
+<title>Couple Goals</title>
+<style>
+  :root {
+    --bg: #F9EDE5; --card: #FFFFFF; --text: #1C1C29; --muted: #6E6E7C;
+    --accent: #D63F59; --accent-soft: #FFE3E8; --line: #EADDD5;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+    padding: max(24px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+    -webkit-text-size-adjust: 100%;
+  }
+  main { width: 100%; max-width: 420px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .mark { width: 64px; height: 64px; margin: 0 auto 20px; display: block; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 24px; text-align: center; font-weight: 700; letter-spacing: -0.01em; }
+  .card { background: var(--card); border-radius: 20px; padding: 20px; box-shadow: 0 1px 2px rgba(28,28,41,.06); }
+  .step { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 10px; }
+  .button {
+    display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 52px;
+    border: 0; border-radius: 14px; background: var(--accent); color: #fff; font: inherit; font-weight: 600;
+    text-decoration: none; cursor: pointer;
+  }
+  .button:focus-visible, .copy:focus-visible, footer a:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
+  .divider { height: 1px; background: var(--line); margin: 20px 0; border: 0; }
+  .code-row { display: flex; flex-direction: column; gap: 10px; }
+  .code {
+    display: block; font: 700 28px/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    letter-spacing: .08em; padding: 14px; border-radius: 12px; background: var(--accent-soft);
+    text-align: center; white-space: nowrap; user-select: all; -webkit-user-select: all;
+  }
+  .copy {
+    width: 100%; min-height: 48px; padding: 0 16px; border-radius: 12px; border: 1.5px solid var(--accent);
+    background: transparent; color: var(--accent); font: inherit; font-weight: 600; cursor: pointer;
+  }
+  .note { color: var(--muted); text-align: center; margin: 0; }
+  .note + .button, .desktop .button { margin-top: 16px; }
+  [hidden] { display: none !important; }
+  footer { margin-top: 28px; font-size: 14px; color: var(--muted); text-align: center; }
+  footer a { color: var(--muted); }
+  @media (max-width: 340px) { h1 { font-size: 23px; } .code { font-size: 24px; } }
+</style>
+</head>
+<body>
+<main>
+  <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+    <path fill="#FF6178" opacity=".45" d="M24 48C24 48 6 37 6 24.5 6 18.7 10.4 14 16 14c3.4 0 6.3 1.8 8 4.6 1.7-2.8 4.6-4.6 8-4.6 5.6 0 10 4.7 10 10.5C42 37 24 48 24 48z"/>
+    <path fill="#FF6178" d="M40 54C40 54 22 43 22 30.5 22 24.7 26.4 20 32 20c3.4 0 6.3 1.8 8 4.6 1.7-2.8 4.6-4.6 8-4.6 5.6 0 10 4.7 10 10.5C58 43 40 54 40 54z"/>
+  </svg>
+  <h1 data-t="title">You’ve got an invite on Couple Goals 💛</h1>
+
+  <section class="card">
+    <!-- Phone (iOS and Android alike): get the app, then the code. -->
+    <div id="phone">
+      <p class="step" data-t="step1">Get the app</p>
+      <a class="button" id="store" href="https://apps.apple.com/app/couple-goals-together/id6777144881" data-t="store">Download on the App Store</a>
+    </div>
+    <!-- Desktop / other: open the link on the iPhone. -->
+    <div id="desktop" class="desktop" hidden>
+      <p class="note" data-t="desktop">Open this link on your iPhone to join.</p>
+      <a class="button" href="https://apps.apple.com/app/couple-goals-together/id6777144881" data-t="store">Download on the App Store</a>
+    </div>
+
+    <hr class="divider">
+
+    <div id="with-code" hidden>
+      <p class="step" data-t="step2">Then enter this code</p>
+      <div class="code-row">
+        <output class="code" id="code" aria-live="polite"></output>
+        <button class="copy" id="copy" type="button" data-t="copy">Copy code</button>
+      </div>
+    </div>
+    <p class="note" id="no-code" data-t="nocode">Ask your partner for their invite code.</p>
+  </section>
+
+  <footer><a id="privacy" href="/privacy/" data-t="privacy">Privacy</a></footer>
+</main>
+
+<script>
+(function () {
+  "use strict";
+  // Same code rules as the server (functions/src/lib/inviteCode.ts): 6 characters, no 0/O/1/I.
+  var CODE = /^#?CG-([A-HJ-NP-Z2-9]{6})$/i;
+  var ENDPOINT = {{ site.invite_endpoint | jsonify }};
+  var T = {
+    en: {
+      title: "You’ve got an invite on Couple Goals 💛", step1: "Get the app", store: "Download on the App Store",
+      step2: "Then enter this code", copy: "Copy code", copied: "Copied",
+      nocode: "Ask your partner for their invite code.", desktop: "Open this link on your iPhone to join.",
+      privacy: "Privacy", privacyHref: "/privacy/", doc: "Couple Goals invite"
+    },
+    fr: {
+      title: "Une invitation t’attend sur Couple Goals 💛", step1: "Télécharge l’app", store: "Télécharger dans l’App Store",
+      step2: "Puis entre ce code", copy: "Copier le code", copied: "Copié",
+      nocode: "Demande le code d’invitation à ta moitié.", desktop: "Ouvre ce lien sur ton iPhone pour rejoindre.",
+      privacy: "Confidentialité", privacyHref: "/fr/privacy/", doc: "Invitation Couple Goals"
+    }
+  };
+
+  var lang = /^fr\b/i.test(navigator.language || "") ? "fr" : "en";
+  var t = T[lang];
+  document.documentElement.lang = lang;
+  document.title = t.doc;
+  Array.prototype.forEach.call(document.querySelectorAll("[data-t]"), function (el) {
+    var key = el.getAttribute("data-t");
+    if (t[key]) el.textContent = t[key];
+  });
+  document.getElementById("privacy").href = t.privacyHref;
+
+  var ua = navigator.userAgent || "";
+  var platform = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
+    ? "ios" : /Android/.test(ua) ? "android" : "other";
+  if (platform === "other") {
+    document.getElementById("phone").hidden = true;
+    document.getElementById("desktop").hidden = false;
+  }
+
+  var match = CODE.exec(decodeURIComponent(location.hash || ""));
+  var code = match ? "CG-" + match[1].toUpperCase() : null;
+  if (code) {
+    document.getElementById("code").textContent = code;
+    document.getElementById("with-code").hidden = false;
+    document.getElementById("no-code").hidden = true;
+    var copy = document.getElementById("copy");
+    copy.addEventListener("click", function () {
+      var done = function () {
+        copy.textContent = t.copied;
+        setTimeout(function () { copy.textContent = t.copy; }, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(done, function () {});
+      } else {
+        var range = document.createRange();
+        range.selectNodeContents(document.getElementById("code"));
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+        try { if (document.execCommand("copy")) done(); } catch (e) {}
+      }
+    });
+  }
+
+  // One personless view, never the code: platform, whether a code was there, language.
+  if (ENDPOINT) {
+    try {
+      fetch(ENDPOINT, {
+        method: "POST", mode: "cors", credentials: "omit", keepalive: true, referrerPolicy: "no-referrer",
+        headers: {"Content-Type": "text/plain"},
+        body: JSON.stringify({action: "view", platform: platform, hasCode: !!code, lang: lang})
+      }).catch(function () {});
+    } catch (e) {}
+  }
+})();
+</script>
+</body>
+</html>

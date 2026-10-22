@@ -9,4 +9,7 @@ defaults:
     values:
       layout: default
 
-include: [privacy.md, terms.md, terms-fr.md, privacy-fr.md]
+include: [privacy.md, terms.md, terms-fr.md, privacy-fr.md, invite.html]
+
+# The invite page's personless view counter (the invitePage function, production).
+invite_endpoint: https://europe-west1-couple-goals-dev-def91.cloudfunctions.net/invitePage
