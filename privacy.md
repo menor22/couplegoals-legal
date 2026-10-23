@@ -64,6 +64,7 @@ We use your information to:
 - Provide the core functionality of the App (create accounts, pair partners, store and sync your shared content, deliver notifications).
 - Give you and your partner access to the paid features you subscribed to, keep that access in sync when you change partners or restore a purchase on another device, and detect when both of you pay for the same couple so we can tell you.
 - Send notifications about your partner's activity (with your consent — managed in your device's notification settings).
+- Suggest reminder times for your challenges and write the texts of your notifications and weekly recap (see Section 6.4).
 - Maintain security, prevent fraud, and resolve technical issues.
 - Understand how the App is used in aggregate, so we can improve it.
 - Communicate with you about account issues or material changes to the App (only when necessary).
@@ -98,7 +99,7 @@ We use PostHog Cloud (EU instance) for product analytics. Analytics data is stor
 Used to deliver push notifications to your device. Apple's privacy policy: https://www.apple.com/legal/privacy/
 
 ### 6.4 Anthropic (Anthropic PBC)
-When you create a habit challenge with a custom title, that title — and only that title — is sent to Anthropic's Claude API to classify its time of day and effort level, so the app can schedule it sensibly. No names, identifiers, or other content are included, and challenges you choose from the built-in catalog are not sent. Anthropic's privacy policy: https://www.anthropic.com/legal/privacy
+To suggest reminder times for your challenges and to write the texts of the notifications and the weekly recap about them, we send Anthropic's Claude API the titles of your non-private challenges, together with anonymous counts (how many days a challenge was done, on which weekdays and at what time of day). We never send names, account identifiers, notes, messages between you and your partner (including Sparks), reward or forfeit texts, or private challenges. Challenges you choose from the built-in catalog, with their title unchanged, are not sent. Under its Commercial Terms, Anthropic processes this data on our behalf and may not use it to train its models. Anthropic's privacy policy: https://www.anthropic.com/legal/privacy
 
 ### 6.5 RevenueCat (subscriptions)
 We use RevenueCat, Inc. (USA) to manage subscriptions bought through the App Store. RevenueCat receives your account's technical identifier (not your name or email), your purchase and subscription information from Apple, and technical data (device model, app version, operating system, country, IP address). This data is hosted in the United States. The transfer is governed by RevenueCat's data processing agreement, which includes the European Commission's standard contractual clauses, adapted for Swiss law (FADP). Subscription events (for example "subscription started" or "renewed", without prices or payment details) are also recorded in our analytics (Section 6.2) under the same account identifier. RevenueCat's privacy policy: https://www.revenuecat.com/privacy
@@ -113,7 +114,7 @@ We do not share your personal data with any other third parties. We do not share
 
 Your data is stored primarily within the European Union (Belgium, the Netherlands, and Germany), via the providers listed in Section 6. Some metadata may transit through other regions for technical reasons (e.g. Apple Push Notification routing). Our providers have certified safeguards for any such transfers (Standard Contractual Clauses, adequacy decisions where applicable).
 
-One feature is an exception to this EU-first storage. When you create a habit challenge with a custom title, that title is sent to Anthropic's Claude API (see Section 6.4) and processed on Anthropic's infrastructure in the United States. This transfer is limited to the challenge title alone — no name, account identifier, or other content is attached. Our use of the Claude API is governed by Anthropic's Commercial Terms of Service, which incorporate Anthropic's Data Processing Addendum by reference; that Addendum incorporates the European Commission's Standard Contractual Clauses (with the UK and Swiss equivalents) to the extent required by applicable data protection law, as the safeguard for this transfer. Challenges you choose from the built-in catalog are not sent.
+One feature is an exception to this EU-first storage. The data described in Section 6.4 (titles of non-private challenges and anonymous counts) is sent to Anthropic's Claude API and processed on Anthropic's infrastructure in the United States. No name, account identifier, or other content is attached. Our use of the Claude API is governed by Anthropic's Commercial Terms of Service, which incorporate Anthropic's Data Processing Addendum by reference; that Addendum incorporates the European Commission's Standard Contractual Clauses (with the UK and Swiss equivalents) to the extent required by applicable data protection law, as the safeguard for this transfer. Challenges you choose from the built-in catalog are not sent.
 
 Subscriptions are a second exception. RevenueCat receives the data described in Section 6.5 in the United States; the App connects to RevenueCat when it starts, even if you never subscribe. No content you create in the App (challenges, to-dos, events, notes, photos) is sent. The transfer is governed by RevenueCat's data processing agreement, which includes the European Commission's standard contractual clauses, adapted for Swiss law (FADP).
 
@@ -126,6 +127,7 @@ Subscriptions are a second exception. RevenueCat receives the data described in 
 - **Purchase information:** for as long as your account exists. When you delete your account, our copy is deleted and we ask RevenueCat to delete your customer record. Apple keeps its own records of your purchases under its privacy policy, and we may keep financial reports from Apple that do not identify you, as accounting law requires.
 - **Analytics data:** usage events are kept for 12 months and then deleted. When you delete your account, your analytics profile is deleted; events already recorded stay until that period ends, linked only to the random account identifier, and no new events are recorded.
 - **Abuse-prevention counts:** the attempt counts described in Section 3.2 (invite links and invite codes) are deleted automatically, normally within two days of the last attempt.
+- **Data sent to Anthropic (Section 6.4):** Anthropic deletes it within 30 days, unless its automated safety systems flag it as violating Anthropic's usage policy (then it may be kept for up to 2 years) or the law requires longer retention. The reminder times and texts it produces are stored with your challenge and deleted with it.
 
 ---
 
