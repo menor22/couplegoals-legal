@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Effective date:** June 5, 2026
-**Last updated:** October 22, 2026
+**Last updated:** October 29, 2026
 
 This Privacy Policy explains how Yannick Ormen ("we," "us," or "CoupleGoals") collects, uses, and protects information when you use the CoupleGoals mobile application (the "App") or open an invite link on couplegoals.ch.
 

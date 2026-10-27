@@ -6,7 +6,7 @@ lang: fr
 # Politique de confidentialité
 
 **Date d’entrée en vigueur :** 5 juin 2026
-**Dernière mise à jour :** 22 octobre 2026
+**Dernière mise à jour :** 29 octobre 2026
 
 La présente politique de confidentialité explique comment Yannick Ormen (« nous » ou « CoupleGoals ») collecte, utilise et protège les informations lorsque vous utilisez l’application mobile CoupleGoals (l’« App ») ou ouvrez un lien d’invitation sur couplegoals.ch.
 
