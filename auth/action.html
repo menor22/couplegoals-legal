@@ -1,0 +1,229 @@
+---
+# Firebase Auth action handler (CoupleGoals, 1.5.3): the links in the verification and password
+# reset emails open here (Firebase console → Authentication → Templates → Customize action URL →
+# https://couplegoals.ch/auth/action). Handles verifyEmail, resetPassword, recoverEmail and
+# verifyAndChangeEmail with the Identity Toolkit REST API and the apiKey Firebase puts in the
+# link. Nothing loaded from another domain, no cookies; the code (oobCode) never leaves this page
+# except to Google's Identity Toolkit. Strings: waiting for approval (3 Nov).
+layout: null
+permalink: /auth/action
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#F9EDE5">
+<title>Couple Goals</title>
+<style>
+  @font-face { font-family: "Figtree"; font-weight: 400; src: url("/assets/fonts/Figtree-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Figtree"; font-weight: 600; src: url("/assets/fonts/Figtree-SemiBold.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Newsreader Display"; font-weight: 500; src: url("/assets/fonts/Newsreader-Display-Medium.ttf") format("truetype"); font-display: swap; }
+  :root {
+    --bg: #F9EDE5; --card: #FFFFFF; --text: #1C1C29; --muted: #6E6E7C;
+    --primary: #FF6178; --accent: #D63F59; --line: #EADDD5; --error: #C76B5C;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 17px/1.45 "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+    padding: max(24px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+    -webkit-text-size-adjust: 100%;
+  }
+  main { width: 100%; max-width: 420px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .mark { width: 72px; height: 72px; margin: 0 auto 20px; display: block; }
+  h1 {
+    font: 500 30px/1.2 "Newsreader Display", Georgia, "Times New Roman", serif; letter-spacing: -0.01em;
+    margin: 0 0 12px; text-align: center;
+  }
+  p.lead { color: var(--muted); text-align: center; margin: 0 0 28px; }
+  .card { background: var(--card); border-radius: 20px; padding: 20px; box-shadow: 0 1px 2px rgba(28,28,41,.06); }
+  .button {
+    display: flex; align-items: center; justify-content: center; width: 100%; min-height: 54px; padding: 0 20px;
+    border-radius: 16px; border: 0; background: var(--primary); color: #fff; font: inherit; font-weight: 600;
+    text-decoration: none; cursor: pointer;
+  }
+  .button[disabled] { opacity: .5; cursor: default; }
+  label { display: block; font-size: 15px; font-weight: 600; margin: 0 0 8px; }
+  input[type=password] {
+    width: 100%; min-height: 50px; padding: 0 14px; border-radius: 12px; border: 1.5px solid var(--line);
+    background: #fff; color: var(--text); font: inherit; margin: 0 0 8px;
+  }
+  input[type=password]:focus { outline: none; border-color: var(--primary); }
+  .hint { font-size: 14px; color: var(--muted); margin: 0 0 16px; }
+  .error { font-size: 15px; color: var(--error); margin: 0 0 12px; }
+  .spinner {
+    width: 28px; height: 28px; margin: 8px auto 0; border-radius: 50%;
+    border: 3px solid var(--line); border-top-color: var(--primary); animation: spin 0.9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  [hidden] { display: none !important; }
+  footer { margin-top: 28px; font-size: 14px; color: var(--muted); text-align: center; }
+  footer a { color: var(--muted); }
+  @media (max-width: 340px) { h1 { font-size: 26px; } }
+</style>
+</head>
+<body>
+<main>
+  <!-- The app's two-hearts mark (TwoHeartsMark.imageset): coral and sage, unchanged. -->
+  <svg class="mark" viewBox="171 189 695 695" aria-hidden="true">
+    <path fill="#E27D5F" d="M422 358C339 275 201 330 201 468C201 578 422 743 422 743C422 743 643 578 643 468C643 330 505 275 422 358Z"/>
+    <path fill="#7FA582" d="M615 413C532 330 394 386 394 524C394 634 615 798 615 798C615 798 836 634 836 524C836 386 698 330 615 413Z"/>
+  </svg>
+
+  <!-- Working -->
+  <section id="working">
+    <h1 data-t="working"></h1>
+    <div class="spinner" aria-hidden="true"></div>
+  </section>
+
+  <!-- Done (email confirmed, email restored, password changed) and errors: a title, a line, "Open the app". -->
+  <section id="result" hidden>
+    <h1 id="result-title"></h1>
+    <p class="lead" id="result-body"></p>
+    <a class="button" href="couplegoals://open" data-t="openApp"></a>
+  </section>
+
+  <!-- New password -->
+  <section id="reset" hidden>
+    <h1 data-t="resetTitle"></h1>
+    <p class="lead" id="reset-for"></p>
+    <form class="card" id="reset-form" novalidate>
+      <label for="password" data-t="newPassword"></label>
+      <input id="password" type="password" autocomplete="new-password" minlength="9" required>
+      <p class="hint" data-t="passwordHint"></p>
+      <p class="error" id="reset-error" hidden></p>
+      <button class="button" id="reset-submit" type="submit" data-t="save"></button>
+    </form>
+  </section>
+</main>
+<footer><a id="privacy" href="/privacy/" data-t="privacy"></a></footer>
+<script>
+(function () {
+  "use strict";
+  var COPY = {
+    en: {
+      working: "One moment…",
+      openApp: "Open the app",
+      verifiedTitle: "Your email is confirmed",
+      verifiedBody: "You’re all set. Head back to the app to pair with your partner.",
+      recoveredTitle: "Your email is restored",
+      recoveredBody: "Your account uses your previous email address again.",
+      changedTitle: "Your new email is confirmed",
+      changedBody: "Sign in with it next time.",
+      resetTitle: "Choose a new password",
+      resetFor: "For {email}",
+      newPassword: "New password",
+      passwordHint: "At least 9 characters, one uppercase letter, one number.",
+      save: "Save my password",
+      resetDoneTitle: "Your password is changed",
+      resetDoneBody: "Sign in to the app with your new password.",
+      weakPassword: "That password doesn’t meet the requirements: at least 9 characters, one uppercase letter, one number.",
+      expiredTitle: "This link has expired",
+      expiredBody: "It was already used or is too old. Open the app to get a new one.",
+      failedTitle: "Something went wrong",
+      failedBody: "Check your connection and open the link again.",
+      privacy: "Privacy", privacyHref: "/privacy/"
+    },
+    fr: {
+      working: "Un instant…",
+      openApp: "Ouvrir l’app",
+      verifiedTitle: "Ton e-mail est confirmé",
+      verifiedBody: "Tout est prêt. Retourne dans l’app pour te connecter avec ta moitié.",
+      recoveredTitle: "Ton e-mail est rétabli",
+      recoveredBody: "Ton compte utilise de nouveau ton ancienne adresse e-mail.",
+      changedTitle: "Ton nouvel e-mail est confirmé",
+      changedBody: "Utilise-le pour te connecter la prochaine fois.",
+      resetTitle: "Choisis un nouveau mot de passe",
+      resetFor: "Pour {email}",
+      newPassword: "Nouveau mot de passe",
+      passwordHint: "Au moins 9 caractères, une majuscule, un chiffre.",
+      save: "Enregistrer",
+      resetDoneTitle: "Ton mot de passe est changé",
+      resetDoneBody: "Connecte-toi dans l’app avec ton nouveau mot de passe.",
+      weakPassword: "Ce mot de passe ne respecte pas les critères : au moins 9 caractères, une majuscule, un chiffre.",
+      expiredTitle: "Ce lien a expiré",
+      expiredBody: "Il a déjà servi ou il est trop ancien. Ouvre l’app pour en recevoir un nouveau.",
+      failedTitle: "Un souci est survenu",
+      failedBody: "Vérifie ta connexion et ouvre le lien à nouveau.",
+      privacy: "Confidentialité", privacyHref: "/privacy-fr/"
+    }
+  };
+
+  var q = {};
+  location.search.replace(/^\?/, "").split("&").forEach(function (pair) {
+    if (!pair) return;
+    var i = pair.indexOf("=");
+    q[decodeURIComponent(i < 0 ? pair : pair.slice(0, i))] = i < 0 ? "" : decodeURIComponent(pair.slice(i + 1).replace(/\+/g, " "));
+  });
+  var lang = ((q.lang || navigator.language || "en").toLowerCase().indexOf("fr") === 0) ? "fr" : "en";
+  var t = COPY[lang];
+  document.documentElement.lang = lang;
+  Array.prototype.forEach.call(document.querySelectorAll("[data-t]"), function (el) { el.textContent = t[el.getAttribute("data-t")]; });
+  document.getElementById("privacy").href = t.privacyHref;
+
+  var API = "https://identitytoolkit.googleapis.com/v1/accounts:";
+  function call(method, body) {
+    return fetch(API + method + "?key=" + encodeURIComponent(q.apiKey || ""), {
+      method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)
+    }).then(function (res) {
+      return res.json().then(function (json) {
+        if (!res.ok) throw new Error((json && json.error && json.error.message) || "FAILED");
+        return json;
+      });
+    });
+  }
+  function show(id) {
+    ["working", "result", "reset"].forEach(function (s) { document.getElementById(s).hidden = s !== id; });
+  }
+  function result(title, body) {
+    document.getElementById("result-title").textContent = t[title];
+    document.getElementById("result-body").textContent = t[body];
+    show("result");
+  }
+  function failed(err) {
+    var code = String(err && err.message || "");
+    if (/INVALID_OOB_CODE|EXPIRED_OOB_CODE|USER_DISABLED|USER_NOT_FOUND/.test(code)) result("expiredTitle", "expiredBody");
+    else result("failedTitle", "failedBody");
+  }
+
+  if (!q.oobCode || !q.apiKey) { result("expiredTitle", "expiredBody"); return; }
+
+  if (q.mode === "verifyEmail" || q.mode === "recoverEmail" || q.mode === "verifyAndChangeEmail") {
+    var done = {verifyEmail: ["verifiedTitle", "verifiedBody"], recoverEmail: ["recoveredTitle", "recoveredBody"],
+                verifyAndChangeEmail: ["changedTitle", "changedBody"]}[q.mode];
+    call("update", {oobCode: q.oobCode}).then(function () { result(done[0], done[1]); }, failed);
+  } else if (q.mode === "resetPassword") {
+    // Check the code first (it also gives the account's email), then ask for the new password.
+    call("resetPassword", {oobCode: q.oobCode}).then(function (json) {
+      document.getElementById("reset-for").textContent = t.resetFor.replace("{email}", json.email || "");
+      show("reset");
+      document.getElementById("password").focus();
+    }, failed);
+    document.getElementById("reset-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var input = document.getElementById("password"), error = document.getElementById("reset-error");
+      var submit = document.getElementById("reset-submit");
+      // The app's rule (PasswordPolicy.current): 9 characters, an uppercase letter, a number.
+      if (input.value.length < 9 || !/[A-Z]/.test(input.value) || !/[0-9]/.test(input.value)) { error.textContent = t.weakPassword; error.hidden = false; return; }
+      submit.disabled = true; error.hidden = true;
+      call("resetPassword", {oobCode: q.oobCode, newPassword: input.value}).then(function () {
+        result("resetDoneTitle", "resetDoneBody");
+      }, function (err) {
+        submit.disabled = false;
+        if (/WEAK_PASSWORD|PASSWORD_DOES_NOT_MEET_REQUIREMENTS/.test(String(err && err.message))) {
+          error.textContent = t.weakPassword; error.hidden = false;
+        } else failed(err);
+      });
+    });
+  } else {
+    result("expiredTitle", "expiredBody");
+  }
+})();
+</script>
+</body>
+</html>
