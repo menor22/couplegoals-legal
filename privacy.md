@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Effective date:** June 5, 2026
-**Last updated:** October 29, 2026
+**Last updated:** November 5, 2026
 
 This Privacy Policy explains how Yannick Ormen ("we," "us," or "CoupleGoals") collects, uses, and protects information when you use the CoupleGoals mobile application (the "App") or open an invite link on couplegoals.ch.
 
@@ -106,13 +106,16 @@ We use RevenueCat, Inc. (USA) to manage subscriptions bought through the App Sto
 
 Apple processes your payment as an independent controller, under its own privacy policy: https://www.apple.com/legal/privacy/
 
+### 6.6 Resend (account emails)
+We use Resend, Inc. to send the emails that confirm your email address and reset your password. Resend receives only your email address and the content of that email (its text and the link it contains). These emails are sent from Resend's EU region, in Ireland. Resend's data processing agreement includes the EU Standard Contractual Clauses, with the adjustments required for transfers from Switzerland. Resend's privacy policy: https://resend.com/legal/privacy-policy
+
 We do not share your personal data with any other third parties. We do not share data for advertising purposes.
 
 ---
 
 ## 7. Where is your data stored?
 
-Your data is stored primarily within the European Union (Belgium, the Netherlands, and Germany), via the providers listed in Section 6. Some metadata may transit through other regions for technical reasons (e.g. Apple Push Notification routing). Our providers have certified safeguards for any such transfers (Standard Contractual Clauses, adequacy decisions where applicable).
+Your data is stored primarily within the European Union (Belgium, the Netherlands, Germany, and Ireland), via the providers listed in Section 6. Some metadata may transit through other regions for technical reasons (e.g. Apple Push Notification routing). Our providers have certified safeguards for any such transfers (Standard Contractual Clauses, adequacy decisions where applicable).
 
 The features described in Section 6.4 are an exception to this EU-first storage. The data described there (titles of non-private challenges, with what we work out from them and whether a challenge is solo, with no name or account identifier attached) is sent to Anthropic's Claude API and processed on Anthropic's infrastructure in the United States. No name, account identifier, or other content is attached. Our use of the Claude API is governed by Anthropic's Commercial Terms of Service, which incorporate Anthropic's Data Processing Addendum by reference; that Addendum incorporates the European Commission's Standard Contractual Clauses (with the UK and Swiss equivalents) to the extent required by applicable data protection law, as the safeguard for this transfer. Challenges you choose from the built-in catalog, with their title unchanged, are not sent.
 
@@ -128,6 +131,7 @@ Subscriptions are a second exception. RevenueCat receives the data described in 
 - **Analytics data:** usage events are kept for 12 months and then deleted. When you delete your account, your analytics profile is deleted; events already recorded stay until that period ends, linked only to the random account identifier, and no new events are recorded.
 - **Abuse-prevention counts:** the attempt counts described in Section 3.2 (invite links and invite codes) are deleted automatically, normally within two days of the last attempt.
 - **Data sent to Anthropic (Section 6.4):** Anthropic deletes it within 30 days, unless its automated safety systems flag it as violating Anthropic's usage policy (then it may be kept for up to 2 years) or the law requires longer retention. The classification and reminder texts it produces are stored with your challenge and deleted with it. General facts it writes that pass our checks (for example "15 minutes a day is about 91 hours a year") may be kept, without any title, name or account identifier, and reused in the reminders of other challenges.
+- **Account emails (Section 6.6):** Resend keeps a copy of account emails for 30 days, then deletes it.
 
 ---
 

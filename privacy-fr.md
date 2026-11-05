@@ -6,7 +6,7 @@ lang: fr
 # Politique de confidentialité
 
 **Date d’entrée en vigueur :** 5 juin 2026
-**Dernière mise à jour :** 29 octobre 2026
+**Dernière mise à jour :** 5 novembre 2026
 
 La présente politique de confidentialité explique comment Yannick Ormen (« nous » ou « CoupleGoals ») collecte, utilise et protège les informations lorsque vous utilisez l’application mobile CoupleGoals (l’« App ») ou ouvrez un lien d’invitation sur couplegoals.ch.
 
@@ -113,13 +113,16 @@ Nous utilisons RevenueCat, Inc. (États-Unis) pour gérer les abonnements souscr
 
 Apple traite votre paiement en tant que responsable du traitement indépendant, selon sa propre politique de confidentialité : https://www.apple.com/legal/privacy/
 
+### 6.6 Resend (e-mails de compte)
+Nous utilisons Resend, Inc. pour envoyer les e-mails qui confirment votre adresse e-mail et permettent de réinitialiser votre mot de passe. Resend reçoit uniquement votre adresse e-mail et le contenu de cet e-mail (son texte et le lien qu’il contient). Ces e-mails sont envoyés depuis la région européenne de Resend, en Irlande. Le contrat de traitement des données de Resend inclut les clauses contractuelles types de l’UE, avec les adaptations requises pour les transferts depuis la Suisse. Politique de confidentialité de Resend : https://resend.com/legal/privacy-policy
+
 Nous ne communiquons vos données personnelles à aucun autre tiers. Nous ne partageons aucune donnée à des fins publicitaires.
 
 ---
 
 ## 7. Où vos données sont-elles stockées ?
 
-Vos données sont stockées principalement dans l’Union européenne (Belgique, Pays-Bas et Allemagne), auprès des prestataires énumérés à la section 6. Certaines métadonnées peuvent transiter par d’autres régions pour des raisons techniques (par exemple l’acheminement des notifications push d’Apple). Nos prestataires disposent de garanties reconnues pour ces transferts (clauses contractuelles types, décisions d’adéquation le cas échéant).
+Vos données sont stockées principalement dans l’Union européenne (Belgique, Pays-Bas, Allemagne et Irlande), auprès des prestataires énumérés à la section 6. Certaines métadonnées peuvent transiter par d’autres régions pour des raisons techniques (par exemple l’acheminement des notifications push d’Apple). Nos prestataires disposent de garanties reconnues pour ces transferts (clauses contractuelles types, décisions d’adéquation le cas échéant).
 
 Les fonctionnalités décrites à la section 6.4 font exception à ce stockage prioritairement européen. Les données qui y sont décrites (titres des défis non privés, avec ce que nous en déduisons et le fait qu’un défi soit solo, sans nom ni identifiant de compte) sont envoyées à l’API Claude d’Anthropic et traitées sur l’infrastructure d’Anthropic aux États-Unis. Aucun nom, identifiant de compte ni autre contenu n’y est joint. Notre utilisation de l’API Claude est régie par les conditions commerciales d’Anthropic (Commercial Terms of Service), qui intègrent par renvoi l’avenant relatif au traitement des données d’Anthropic (Data Processing Addendum) ; cet avenant intègre les clauses contractuelles types de la Commission européenne (avec leurs équivalents britannique et suisse) dans la mesure requise par le droit de la protection des données applicable, comme garantie pour ce transfert. Les défis choisis dans le catalogue intégré, avec leur titre inchangé, ne sont pas envoyés.
 
@@ -135,6 +138,7 @@ Les abonnements constituent une seconde exception. RevenueCat reçoit aux États
 - **Statistiques d’utilisation :** les événements d’utilisation sont conservés 12 mois, puis supprimés. Lorsque vous supprimez votre compte, votre profil statistique est supprimé ; les événements déjà enregistrés sont conservés jusqu’à la fin de cette période, liés uniquement à l’identifiant de compte aléatoire, et plus aucun nouvel événement n’est enregistré.
 - **Comptages anti-abus :** les comptages de tentatives décrits à la section 3.2 (liens et codes d’invitation) sont supprimés automatiquement, normalement dans les deux jours suivant la dernière tentative.
 - **Données envoyées à Anthropic (section 6.4) :** Anthropic les supprime dans un délai de 30 jours, sauf si ses systèmes de sécurité automatisés les signalent comme contraires à sa politique d’utilisation (elles peuvent alors être conservées jusqu’à 2 ans) ou si la loi impose une conservation plus longue. La classification et les textes de rappel produits sont enregistrés avec votre défi et supprimés avec lui. Les faits généraux qu’elle écrit et qui passent nos vérifications (par exemple « 15 minutes par jour, c’est environ 91 heures par an ») peuvent être conservés, sans titre, nom ni identifiant de compte, et réutilisés dans les rappels d’autres défis.
+- **E-mails de compte (section 6.6) :** Resend conserve une copie des e-mails de compte pendant 30 jours, puis la supprime.
 
 ---
 
