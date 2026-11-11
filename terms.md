@@ -1,7 +1,7 @@
 # Terms of Service
 
 **Effective date:** June 5, 2026
-**Last updated:** October 20, 2026
+**Last updated:** November 11, 2026
 
 Welcome to CoupleGoals. These Terms of Service ("Terms") govern your use of the CoupleGoals mobile application (the "App") provided by Yannick Ormen ("we," "us," or "CoupleGoals"). By using the App, you agree to these Terms. If you do not agree, please do not use the App.
 
@@ -130,25 +130,25 @@ If you are using CoupleGoals through Apple's TestFlight program, you understand 
 
 ## 12. Subscriptions
 
-**One subscription per couple.** Once your free trial ends, CoupleGoals requires a subscription for couples. One subscription, bought by either partner, covers both partners while you are paired and the subscription is active. If two subscriptions are bought for the same couple by mistake, you can cancel one in your Apple ID settings and ask Apple for a refund.
+**Free version and Couple Goals Plus.** CoupleGoals has a free version and an optional subscription, Couple Goals Plus. With the free version, a couple can run one challenge at a time (a bet counts as one) and use everything you share every day: check-offs, to-dos, lists, the agenda, streaks and reminders. Plus adds the features described in the App before you buy, such as unlimited challenges, the full challenge catalog, your full history and records, recurring to-dos, priorities and your iPhone calendars. One subscription, bought by either partner, covers both partners while you are paired and the subscription is active. If two subscriptions are bought for the same couple by mistake, you can cancel one in your Apple ID settings and ask Apple for a refund.
 
-**Free trial.** When you pair with a partner, your couple gets a 7-day free trial of every feature. No payment details are asked for. Each person can start a free trial only once: a new couple gets one only if at least one partner has never had one.
+**Free trial.** The yearly plan may come with a free trial, offered by Apple as an introductory offer. Its length and the price that follows are shown in the App and on Apple's purchase sheet before you confirm. You are not charged during the trial; the subscription starts automatically at its end unless you cancel at least 24 hours before it ends. Apple decides who is eligible (generally once per Apple ID). Couples who started the earlier 7-day trial, which needed no payment details, keep it until its end date.
 
-**Founding couples.** Couples paired before subscriptions were introduced keep free access for as long as that couple stays together in the App. This belongs to that couple; a couple formed later follows these Terms like any other.
+**Founding couples.** Couples paired before subscriptions were introduced keep Couple Goals Plus for free for as long as that couple stays together in the App. This belongs to that couple; a couple formed later follows these Terms like any other.
 
 **Prices.** Prices are shown in the App before you buy, in your local currency, including any applicable taxes, as set by Apple.
 
 **Auto-renewal.** A subscription renews automatically at the end of each period (monthly or yearly) unless it is cancelled at least 24 hours before the end of the current period. Payment is charged to your Apple ID account.
 
-**Cancellation.** You can cancel at any time in your Apple ID settings (Settings → your name → Subscriptions). Cancellation takes effect at the end of the current period, and you keep access until then.
+**Cancellation.** You can cancel at any time in your Apple ID settings (Settings → your name → Subscriptions). Cancellation takes effect at the end of the current period, and you keep Plus until then.
 
 **Billing and refunds.** Purchases are processed by Apple. Billing, payment problems and refunds are handled by Apple under its terms; we cannot issue refunds ourselves. You can request a refund at https://reportaproblem.apple.com.
 
-**When a subscription ends.** If a subscription lapses or is refunded and no other subscription covers your couple, the App is locked for both partners until one of you subscribes. Nothing is deleted: your challenges, history, to-dos, events and lists are kept, and are available again as soon as access returns. Deleting your account does not cancel your subscription. Cancel it in your Apple ID settings first.
+**When a subscription ends.** If a subscription lapses or is refunded and no other subscription covers your couple, your couple goes back to the free version. Nothing is deleted: your challenges, history, to-dos, events and lists are kept. Challenges already running keep going; starting more than one at a time, and the other Plus features, need Plus again. Deleting your account does not cancel your subscription. Cancel it in your Apple ID settings first.
 
 **When a couple ends.** A subscription stays with the partner who bought it: if the other partner deletes their account, it covers the payer's next couple from the day they pair; if the payer deletes their account, it no longer covers their former partner, who can keep using the App on their own, for free.
 
-**Using the App without a partner.** Using the App on your own stays free: your own challenges, to-dos, lists and agenda work without a subscription; couple challenges and bets need a paired partner.
+**Using the App without a partner.** Using the App on your own is free: your own challenges, to-dos, lists and agenda work without a subscription; couple challenges and bets need a paired partner. You can also buy Plus before you pair: it covers your couple from the day you pair.
 
 **Price changes.** We may change subscription prices. Apple notifies you in advance as its rules require, and where Apple requires your consent to a price increase, the subscription does not renew at the new price without it.
 
@@ -222,4 +222,4 @@ Postal: 20E route de Vandoeuvres, 1223 Cologny, Switzerland
 
 *Privacy Policy: see https://couplegoals.ch/privacy (or the linked URL in the App). French version of these Terms: https://couplegoals.ch/fr/terms*
 
-*These Terms of Service were last updated on October 20, 2026.*
+*These Terms of Service were last updated on November 11, 2026.*
