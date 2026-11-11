@@ -211,4 +211,4 @@ Nous nous efforçons de répondre dans un délai de 30 jours.
 
 ---
 
-*La présente politique de confidentialité a été mise à jour pour la dernière fois le 20 octobre 2026. Un historique versionné est disponible sur https://github.com/menor22/couplegoals-legal.*
+*La présente politique de confidentialité a été mise à jour pour la dernière fois le 11 novembre 2026. Un historique versionné est disponible sur https://github.com/menor22/couplegoals-legal.*

@@ -229,4 +229,4 @@ Adresse postale : 20E route de Vandoeuvres, 1223 Cologny, Suisse
 
 *Politique de confidentialité : voir https://couplegoals.ch/privacy (ou le lien indiqué dans l’App).*
 
-*Les présentes Conditions d’utilisation ont été mises à jour pour la dernière fois le 20 octobre 2026.*
+*Les présentes Conditions d’utilisation ont été mises à jour pour la dernière fois le 11 novembre 2026.*

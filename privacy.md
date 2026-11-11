@@ -204,4 +204,4 @@ We aim to respond within 30 days.
 
 ---
 
-*This Privacy Policy was last updated on October 20, 2026. A version-controlled history is available at https://github.com/menor22/couplegoals-legal. French version of this policy: https://couplegoals.ch/fr/privacy*
+*This Privacy Policy was last updated on November 11, 2026. A version-controlled history is available at https://github.com/menor22/couplegoals-legal. French version of this policy: https://couplegoals.ch/fr/privacy*

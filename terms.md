@@ -222,4 +222,4 @@ Postal: 20E route de Vandoeuvres, 1223 Cologny, Switzerland
 
 *Privacy Policy: see https://couplegoals.ch/privacy (or the linked URL in the App). French version of these Terms: https://couplegoals.ch/fr/terms*
 
-*These Terms of Service were last updated on October 20, 2026.*
+*These Terms of Service were last updated on November 11, 2026.*
