@@ -6,7 +6,7 @@ lang: fr
 # Conditions d’utilisation
 
 **Date d’entrée en vigueur :** 5 juin 2026
-**Dernière mise à jour :** 11 novembre 2026
+**Dernière mise à jour :** 16 novembre 2026
 
 Bienvenue sur CoupleGoals. Les présentes conditions d’utilisation (les « Conditions ») régissent votre utilisation de l’application mobile CoupleGoals (l’« App ») fournie par Yannick Ormen (« nous » ou « CoupleGoals »). En utilisant l’App, vous acceptez ces Conditions. Si vous ne les acceptez pas, merci de ne pas utiliser l’App.
 
@@ -229,4 +229,4 @@ Adresse postale : 20E route de Vandoeuvres, 1223 Cologny, Suisse
 
 *Politique de confidentialité : voir https://couplegoals.ch/privacy (ou le lien indiqué dans l’App).*
 
-*Les présentes Conditions d’utilisation ont été mises à jour pour la dernière fois le 11 novembre 2026.*
+*Les présentes Conditions d’utilisation ont été mises à jour pour la dernière fois le 16 novembre 2026.*
