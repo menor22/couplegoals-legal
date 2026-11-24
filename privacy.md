@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Effective date:** June 5, 2026
-**Last updated:** November 11, 2026
+**Last updated:** November 24, 2026
 
 This Privacy Policy explains how Yannick Ormen ("we," "us," or "CoupleGoals") collects, uses, and protects information when you use the CoupleGoals mobile application (the "App") or open an invite link on couplegoals.ch.
 
@@ -43,6 +43,7 @@ We collect only the information necessary to operate the App. Specifically:
 - **Optional inputs:** event titles, dates, optional notes, optional person names (e.g. whose birthday).
 - **Purchase information (if you subscribe):** payment is handled entirely by Apple; we never receive your card or bank details, your Apple ID, or your billing address. Through RevenueCat (see Section 6.5) we receive the state of your subscription: which plan you bought, purchase, renewal and expiry dates, whether it will renew, whether a payment problem or a refund occurred, the store, and Apple's transaction identifiers. It is linked to your account identifier, not to your name or email. Your partner sees that your couple has Plus, and thanks to whom, but never any payment details.
 - **Profile photo (optional):** if you add a profile photo, it is stored in Firebase Storage, downscaled to a maximum of 512 pixels, visible only to you and your paired partner, and deleted when you delete your account.
+- **Android waitlist (optional):** if you leave your email address on the invite page, we store it in Firebase (Section 6.1) with the page language and the date, only to email you once when CoupleGoals is available on Android.
 
 ### 3.2 Information collected automatically
 
@@ -79,7 +80,7 @@ If you are in the European Union, the United Kingdom, or another jurisdiction go
 
 - **Contract performance (Art. 6(1)(b) GDPR):** to provide the App's services to you, including the subscription you purchased.
 - **Legitimate interests (Art. 6(1)(f) GDPR):** to maintain security, prevent fraud, and improve the App in ways that do not override your privacy interests.
-- **Consent (Art. 6(1)(a) GDPR):** for push notifications and any optional features you explicitly enable.
+- **Consent (Art. 6(1)(a) GDPR):** for push notifications, the Android waitlist and any optional features you explicitly enable.
 
 You may withdraw consent at any time without affecting prior processing.
 
@@ -132,6 +133,7 @@ Subscriptions are a second exception. RevenueCat receives the data described in 
 - **Abuse-prevention counts:** the attempt counts described in Section 3.2 (invite links and invite codes) are deleted automatically, normally within two days of the last attempt.
 - **Data sent to Anthropic (Section 6.4):** Anthropic deletes it within 30 days, unless its automated safety systems flag it as violating Anthropic's usage policy (then it may be kept for up to 2 years) or the law requires longer retention. The classification and reminder texts it produces are stored with your challenge and deleted with it. General facts it writes that pass our checks (for example "15 minutes a day is about 91 hours a year") may be kept, without any title, name or account identifier, and reused in the reminders of other challenges.
 - **Account emails (Section 6.6):** Resend keeps a copy of account emails for 30 days, then deletes it.
+- **Android waitlist:** deleted once that email is sent, and in any case within 12 months. You can ask us to delete it sooner at the address in Section 1.
 
 ---
 
@@ -204,4 +206,4 @@ We aim to respond within 30 days.
 
 ---
 
-*This Privacy Policy was last updated on November 11, 2026. A version-controlled history is available at https://github.com/menor22/couplegoals-legal. French version of this policy: https://couplegoals.ch/fr/privacy*
+*This Privacy Policy was last updated on November 24, 2026. A version-controlled history is available at https://github.com/menor22/couplegoals-legal. French version of this policy: https://couplegoals.ch/fr/privacy*
