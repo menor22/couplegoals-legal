@@ -6,7 +6,7 @@ lang: fr
 # Politique de confidentialité
 
 **Date d’entrée en vigueur :** 5 juin 2026
-**Dernière mise à jour :** 11 novembre 2026
+**Dernière mise à jour :** 24 novembre 2026
 
 La présente politique de confidentialité explique comment Yannick Ormen (« nous » ou « CoupleGoals ») collecte, utilise et protège les informations lorsque vous utilisez l’application mobile CoupleGoals (l’« App ») ou ouvrez un lien d’invitation sur couplegoals.ch.
 
@@ -50,6 +50,7 @@ Nous ne collectons que les informations nécessaires au fonctionnement de l’Ap
 - **Saisies facultatives :** titres, dates et notes facultatives des événements, noms de personnes facultatifs (par exemple, à qui est l’anniversaire).
 - **Informations d’achat (si vous vous abonnez) :** le paiement est entièrement géré par Apple ; nous ne recevons jamais vos coordonnées de carte ou bancaires, votre identifiant Apple ni votre adresse de facturation. Par l’intermédiaire de RevenueCat (voir la section 6.5), nous recevons l’état de votre abonnement : la formule choisie, les dates d’achat, de renouvellement et d’expiration, s’il sera renouvelé, si un problème de paiement ou un remboursement a eu lieu, la boutique et les identifiants de transaction d’Apple. Ces informations sont liées à l’identifiant de votre compte, et non à votre nom ou à votre e-mail. Votre partenaire voit que votre couple a Plus, et grâce à qui, mais jamais aucune information de paiement.
 - **Photo de profil (facultative) :** si vous ajoutez une photo de profil, elle est enregistrée dans Firebase Storage, réduite à 512 pixels au maximum, visible uniquement par vous et votre partenaire, et supprimée lorsque vous supprimez votre compte.
+- **Liste d’attente Android (facultative) :** si vous laissez votre adresse e-mail sur la page d’invitation, nous l’enregistrons dans Firebase (section 6.1) avec la langue de la page et la date, uniquement pour vous écrire une fois lorsque CoupleGoals sera disponible sur Android.
 
 ### 3.2 Informations collectées automatiquement
 
@@ -86,7 +87,7 @@ Si vous vous trouvez dans l’Union européenne, au Royaume-Uni ou dans une autr
 
 - **Exécution du contrat (art. 6, par. 1, let. b RGPD) :** pour vous fournir les services de l’App, y compris l’abonnement que vous avez souscrit.
 - **Intérêts légitimes (art. 6, par. 1, let. f RGPD) :** pour assurer la sécurité, prévenir la fraude et améliorer l’App d’une manière qui ne porte pas atteinte à vos intérêts en matière de vie privée.
-- **Consentement (art. 6, par. 1, let. a RGPD) :** pour les notifications push et toute fonctionnalité facultative que vous activez expressément.
+- **Consentement (art. 6, par. 1, let. a RGPD) :** pour les notifications push, la liste d’attente Android et toute fonctionnalité facultative que vous activez expressément.
 
 Vous pouvez retirer votre consentement à tout moment, sans que cela affecte les traitements effectués auparavant.
 
@@ -139,6 +140,7 @@ Les abonnements constituent une seconde exception. RevenueCat reçoit aux États
 - **Comptages anti-abus :** les comptages de tentatives décrits à la section 3.2 (liens et codes d’invitation) sont supprimés automatiquement, normalement dans les deux jours suivant la dernière tentative.
 - **Données envoyées à Anthropic (section 6.4) :** Anthropic les supprime dans un délai de 30 jours, sauf si ses systèmes de sécurité automatisés les signalent comme contraires à sa politique d’utilisation (elles peuvent alors être conservées jusqu’à 2 ans) ou si la loi impose une conservation plus longue. La classification et les textes de rappel produits sont enregistrés avec votre défi et supprimés avec lui. Les faits généraux qu’elle écrit et qui passent nos vérifications (par exemple « 15 minutes par jour, c’est environ 91 heures par an ») peuvent être conservés, sans titre, nom ni identifiant de compte, et réutilisés dans les rappels d’autres défis.
 - **E-mails de compte (section 6.6) :** Resend conserve une copie des e-mails de compte pendant 30 jours, puis la supprime.
+- **Liste d’attente Android :** supprimée dès l’envoi de cet e-mail, et dans tous les cas dans un délai de 12 mois. Vous pouvez nous demander de la supprimer plus tôt à l’adresse indiquée à la section 1.
 
 ---
 
@@ -211,4 +213,4 @@ Nous nous efforçons de répondre dans un délai de 30 jours.
 
 ---
 
-*La présente politique de confidentialité a été mise à jour pour la dernière fois le 11 novembre 2026. Un historique versionné est disponible sur https://github.com/menor22/couplegoals-legal.*
+*La présente politique de confidentialité a été mise à jour pour la dernière fois le 24 novembre 2026. Un historique versionné est disponible sur https://github.com/menor22/couplegoals-legal.*
