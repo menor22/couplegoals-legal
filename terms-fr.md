@@ -6,7 +6,7 @@ lang: fr
 # Conditions d’utilisation
 
 **Date d’entrée en vigueur :** 5 juin 2026
-**Dernière mise à jour :** 16 novembre 2026
+**Dernière mise à jour :** 26 novembre 2026
 
 Bienvenue sur CoupleGoals. Les présentes conditions d’utilisation (les « Conditions ») régissent votre utilisation de l’application mobile CoupleGoals (l’« App ») fournie par Yannick Ormen (« nous » ou « CoupleGoals »). En utilisant l’App, vous acceptez ces Conditions. Si vous ne les acceptez pas, merci de ne pas utiliser l’App.
 
@@ -137,25 +137,25 @@ Si vous utilisez CoupleGoals via le programme TestFlight d’Apple, vous compren
 
 ## 12. Abonnements
 
-**Version gratuite et Couple Goals Plus.** CoupleGoals propose une version gratuite et un abonnement facultatif, Couple Goals Plus. Avec la version gratuite, un couple peut mener un défi à la fois (un pari compte comme un défi), le choisir dans tout le catalogue de défis ou écrire le sien, et utiliser tout ce que vous partagez au quotidien : les checks, les tâches, les listes, l’agenda, les séries et les rappels. Plus ajoute les fonctionnalités décrites dans l’App avant l’achat, par exemple des défis illimités, plusieurs paris à la fois, l’historique complet et les records, les tâches récurrentes, les priorités et les calendriers de votre iPhone. Un seul abonnement, souscrit par l’un ou l’autre des partenaires, couvre les deux tant que vous formez un couple dans l’App et que l’abonnement est actif. Si deux abonnements sont souscrits par erreur pour le même couple, vous pouvez en résilier un dans les réglages de votre identifiant Apple et demander un remboursement à Apple.
+**Version gratuite et Couple Goals Gold.** CoupleGoals propose une version gratuite et un abonnement facultatif, Couple Goals Gold (anciennement Couple Goals Plus). Avec la version gratuite, un couple peut mener un défi à la fois (un pari compte comme un défi), le choisir dans tout le catalogue de défis ou écrire le sien, et utiliser tout ce que vous partagez au quotidien : les checks, les tâches, les listes, l’agenda, les séries et les rappels. Gold ajoute les fonctionnalités décrites dans l’App avant l’achat, par exemple des défis illimités, plusieurs paris à la fois, l’historique complet et les records, les tâches récurrentes, les priorités et les calendriers de votre iPhone. Un seul abonnement, souscrit par l’un ou l’autre des partenaires, couvre les deux tant que vous formez un couple dans l’App et que l’abonnement est actif. Si deux abonnements sont souscrits par erreur pour le même couple, vous pouvez en résilier un dans les réglages de votre identifiant Apple et demander un remboursement à Apple.
 
 **Essai gratuit.** La formule annuelle peut comprendre un essai gratuit, proposé par Apple comme offre de lancement. Sa durée et le prix qui suit sont affichés dans l’App et sur la fenêtre d’achat d’Apple avant votre confirmation. Rien n’est prélevé pendant l’essai ; l’abonnement démarre automatiquement à sa fin, sauf résiliation au moins 24 heures avant. Apple décide de l’éligibilité (en général une fois par identifiant Apple). Les couples qui ont commencé l’ancien essai de 7 jours, sans moyen de paiement, le conservent jusqu’à sa date de fin.
 
-**Couples fondateurs.** Les couples formés avant l’arrivée des abonnements conservent Couple Goals Plus gratuitement tant que ce couple reste formé dans l’App. Cet avantage est attaché à ce couple ; un couple formé plus tard suit les présentes Conditions comme tout autre.
+**Couples fondateurs.** Les couples formés avant l’arrivée des abonnements conservent Couple Goals Gold gratuitement tant que ce couple reste formé dans l’App. Cet avantage est attaché à ce couple ; un couple formé plus tard suit les présentes Conditions comme tout autre.
 
 **Prix.** Les prix sont affichés dans l’App avant l’achat, dans votre monnaie locale, taxes applicables comprises, telles que fixées par Apple.
 
 **Renouvellement automatique.** L’abonnement se renouvelle automatiquement à la fin de chaque période (mensuelle ou annuelle), sauf résiliation au moins 24 heures avant la fin de la période en cours. Le paiement est débité de votre compte Apple.
 
-**Résiliation.** Vous pouvez résilier à tout moment dans les réglages de votre identifiant Apple (Réglages → votre nom → Abonnements). La résiliation prend effet à la fin de la période en cours ; Plus est conservé jusque-là.
+**Résiliation.** Vous pouvez résilier à tout moment dans les réglages de votre identifiant Apple (Réglages → votre nom → Abonnements). La résiliation prend effet à la fin de la période en cours ; vous gardez Gold jusque-là.
 
 **Facturation et remboursements.** Les achats sont traités par Apple. La facturation, les problèmes de paiement et les remboursements relèvent d’Apple, selon ses conditions ; nous ne pouvons pas rembourser nous-mêmes. Vous pouvez demander un remboursement sur https://reportaproblem.apple.com.
 
-**Fin d’un abonnement.** Si un abonnement expire ou est remboursé et qu’aucun autre abonnement ne couvre votre couple, votre couple repasse à la version gratuite. Rien n’est supprimé : vos défis, votre historique, vos tâches, vos événements et vos listes sont conservés. Les défis en cours continuent ; en lancer plus d’un à la fois, comme les autres fonctionnalités de Plus, nécessite à nouveau Plus. Supprimer votre compte n’annule pas votre abonnement. Résiliez-le d’abord dans les réglages de votre identifiant Apple.
+**Fin d’un abonnement.** Si un abonnement expire ou est remboursé et qu’aucun autre abonnement ne couvre votre couple, votre couple repasse à la version gratuite. Rien n’est supprimé : vos défis, votre historique, vos tâches, vos événements et vos listes sont conservés. Les défis en cours continuent ; en lancer plus d’un à la fois, comme les autres fonctionnalités de Gold, nécessite à nouveau Gold. Supprimer votre compte n’annule pas votre abonnement. Résiliez-le d’abord dans les réglages de votre identifiant Apple.
 
 **Fin d’un couple.** Un abonnement reste attaché à la personne qui l’a souscrit : si l’autre partenaire supprime son compte, l’abonnement couvre le prochain couple que cette personne formera, dès la mise en couple ; si c’est elle qui supprime son compte, l’abonnement ne couvre plus l’autre partenaire, qui peut continuer à utiliser l’App en solo, gratuitement.
 
-**Utiliser l’App sans partenaire.** L’utilisation de l’App en solo reste gratuite : vos propres défis, tâches, listes et agenda fonctionnent sans abonnement ; les défis à deux et les paris nécessitent d’être en couple dans l’App. Vous pouvez aussi prendre Plus avant de former votre couple : il le couvre dès la mise en couple.
+**Utiliser l’App sans partenaire.** L’utilisation de l’App en solo reste gratuite : vos propres défis, tâches, listes et agenda fonctionnent sans abonnement ; les défis à deux et les paris nécessitent d’être en couple dans l’App. Vous pouvez aussi prendre Gold avant de former votre couple : l’abonnement le couvre dès la mise en couple.
 
 **Modification des prix.** Nous pouvons modifier les prix des abonnements. Apple vous en informe à l’avance comme ses règles l’exigent et, lorsqu’Apple requiert votre accord pour une hausse de prix, l’abonnement n’est pas renouvelé au nouveau prix sans cet accord.
 

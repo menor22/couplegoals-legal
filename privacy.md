@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Effective date:** June 5, 2026
-**Last updated:** November 24, 2026
+**Last updated:** November 26, 2026
 
 This Privacy Policy explains how Yannick Ormen ("we," "us," or "CoupleGoals") collects, uses, and protects information when you use the CoupleGoals mobile application (the "App") or open an invite link on couplegoals.ch.
 
@@ -41,7 +41,7 @@ We collect only the information necessary to operate the App. Specifically:
 - **Couple data:** when you pair with a partner, we store the link between your account and theirs.
 - **Content you create:** the challenges, to-dos, events, reactions ("Sparks"), and notes you create within the App. This content is shared between you and your paired partner.
 - **Optional inputs:** event titles, dates, optional notes, optional person names (e.g. whose birthday).
-- **Purchase information (if you subscribe):** payment is handled entirely by Apple; we never receive your card or bank details, your Apple ID, or your billing address. Through RevenueCat (see Section 6.5) we receive the state of your subscription: which plan you bought, purchase, renewal and expiry dates, whether it will renew, whether a payment problem or a refund occurred, the store, and Apple's transaction identifiers. It is linked to your account identifier, not to your name or email. Your partner sees that your couple has Plus, and thanks to whom, but never any payment details.
+- **Purchase information (if you subscribe):** payment is handled entirely by Apple; we never receive your card or bank details, your Apple ID, or your billing address. Through RevenueCat (see Section 6.5) we receive the state of your subscription: which plan you bought, purchase, renewal and expiry dates, whether it will renew, whether a payment problem or a refund occurred, the store, and Apple's transaction identifiers. It is linked to your account identifier, not to your name or email. Your partner sees that your couple has Couple Goals Gold (formerly Couple Goals Plus), and thanks to whom, but never any payment details.
 - **Profile photo (optional):** if you add a profile photo, it is stored in Firebase Storage, downscaled to a maximum of 512 pixels, visible only to you and your paired partner, and deleted when you delete your account.
 - **Android waitlist (optional):** if you leave your email address on the invite page, we store it in Firebase (Section 6.1) with the page language and the date, only to email you once when CoupleGoals is available on Android.
 
