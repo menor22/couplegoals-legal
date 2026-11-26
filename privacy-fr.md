@@ -6,7 +6,7 @@ lang: fr
 # Politique de confidentialité
 
 **Date d’entrée en vigueur :** 5 juin 2026
-**Dernière mise à jour :** 24 novembre 2026
+**Dernière mise à jour :** 26 novembre 2026
 
 La présente politique de confidentialité explique comment Yannick Ormen (« nous » ou « CoupleGoals ») collecte, utilise et protège les informations lorsque vous utilisez l’application mobile CoupleGoals (l’« App ») ou ouvrez un lien d’invitation sur couplegoals.ch.
 
@@ -48,7 +48,7 @@ Nous ne collectons que les informations nécessaires au fonctionnement de l’Ap
 - **Données du couple :** lorsque vous formez un couple avec votre partenaire, nous enregistrons le lien entre votre compte et le sien.
 - **Contenu que vous créez :** les défis, tâches, événements, réactions (« Sparks ») et notes que vous créez dans l’App. Ce contenu est partagé entre vous et votre partenaire.
 - **Saisies facultatives :** titres, dates et notes facultatives des événements, noms de personnes facultatifs (par exemple, à qui est l’anniversaire).
-- **Informations d’achat (si vous vous abonnez) :** le paiement est entièrement géré par Apple ; nous ne recevons jamais vos coordonnées de carte ou bancaires, votre identifiant Apple ni votre adresse de facturation. Par l’intermédiaire de RevenueCat (voir la section 6.5), nous recevons l’état de votre abonnement : la formule choisie, les dates d’achat, de renouvellement et d’expiration, s’il sera renouvelé, si un problème de paiement ou un remboursement a eu lieu, la boutique et les identifiants de transaction d’Apple. Ces informations sont liées à l’identifiant de votre compte, et non à votre nom ou à votre e-mail. Votre partenaire voit que votre couple a Plus, et grâce à qui, mais jamais aucune information de paiement.
+- **Informations d’achat (si vous vous abonnez) :** le paiement est entièrement géré par Apple ; nous ne recevons jamais vos coordonnées de carte ou bancaires, votre identifiant Apple ni votre adresse de facturation. Par l’intermédiaire de RevenueCat (voir la section 6.5), nous recevons l’état de votre abonnement : la formule choisie, les dates d’achat, de renouvellement et d’expiration, s’il sera renouvelé, si un problème de paiement ou un remboursement a eu lieu, la boutique et les identifiants de transaction d’Apple. Ces informations sont liées à l’identifiant de votre compte, et non à votre nom ou à votre e-mail. Votre partenaire voit que votre couple a Couple Goals Gold (anciennement Couple Goals Plus), et grâce à qui, mais jamais aucune information de paiement.
 - **Photo de profil (facultative) :** si vous ajoutez une photo de profil, elle est enregistrée dans Firebase Storage, réduite à 512 pixels au maximum, visible uniquement par vous et votre partenaire, et supprimée lorsque vous supprimez votre compte.
 - **Liste d’attente Android (facultative) :** si vous laissez votre adresse e-mail sur la page d’invitation, nous l’enregistrons dans Firebase (section 6.1) avec la langue de la page et la date, uniquement pour vous écrire une fois lorsque CoupleGoals sera disponible sur Android.
 
